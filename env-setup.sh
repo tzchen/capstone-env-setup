@@ -8,17 +8,8 @@ usr/bin/ruby \
 # to bypass authentication
 #   curl -fsSLu user:password https://raw.githubusercontent.com/Homebrew/install/master/install
 
-# install yarn
-brew install yarn
-
-# install VScode
-brew cask install visual-studio-code
-
-#install docker
-brew cask install docker
-
-# install gcloud
-brew cask install google-cloud-sdk
+# Install Homebrew deps
+brew bundle
 
 # install kubectl in gcloud
 gcloud --quiet components install kubectl

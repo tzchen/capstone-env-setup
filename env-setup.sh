@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# set up basic vim
+touch ~/.vimrc
+echo ""
+
 # install homebrew
 usr/bin/ruby \
   -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" \
@@ -21,6 +25,9 @@ gcloud --quiet components install kubectl
 # login to gcloud
 gcloud auth login
 # opens browser
+
+# ensure sdk is up to date
+gcloud components update
 
 #set current project to capstone
 gcloud config set project airliftnw-uw
